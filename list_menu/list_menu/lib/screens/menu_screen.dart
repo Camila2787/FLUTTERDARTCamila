@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:list_menu/screens/login_screen.dart';
 import 'package:list_menu/screens/mision_screen.dart';
 import 'package:list_menu/screens/productos.screen.dart';
+import 'package:list_menu/screens/rectangulo_screen.dart';
 
 class MenuScreen extends StatefulWidget {
   const MenuScreen({super.key});
@@ -42,6 +44,24 @@ class _MenuScreenState extends State<MenuScreen> {
             trailing: const Icon(Icons.navigate_next_outlined),
             onTap: (){
               final route = MaterialPageRoute(builder:(context) => const MisionScreen());
+              Navigator.push(context,route);
+            },
+            ),
+               ListTile(title: const  Text('Rectangulo'),
+            subtitle: const Text('Área y perimetro del rectangulo'),
+            leading: const Icon(Icons.rectangle, color: Colors.grey),
+            trailing: const Icon(Icons.navigate_next_outlined),
+            onTap: (){
+              final route = MaterialPageRoute(builder:(context) => const RectanguloScreen());
+              Navigator.push(context,route);
+            },
+            ),
+                ListTile(title: const  Text('Login'),
+            subtitle: const Text('Acceso a la aplicación'),
+            leading: const Icon(Icons.rectangle, color: Colors.grey),
+            trailing: const Icon(Icons.navigate_next_outlined),
+            onTap: (){
+              final route = MaterialPageRoute(builder:(context) => const LoginScreen());
               Navigator.push(context,route);
             },
             ),
