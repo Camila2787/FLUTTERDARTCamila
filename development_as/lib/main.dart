@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:development_as/screens/menu_screen.dart';
 import 'package:development_as/screens/compras_screen.dart';
+import 'package:development_as/screens/login_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -23,7 +24,7 @@ class  _MainAppState extends State<MainApp>{
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
      // home: Text('Mi App')
-     home: MenuScreen()
+     home: LoginScreen()
     );
   }
 }
